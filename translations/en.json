@@ -51,11 +51,61 @@
         "adobeAfterEffects_about": "Adobe After Effects",
         "adobeAfterEffectsDescription_about": "I use it in my work with motion design"
     },
-    "Price": {},
+    "Price": {
+        "Prices": "Prices",
+        "Landing": {
+            "h1_landing": "Landing page",
+            "price_landing": "from 200$",
+            "description_landing": "Suitable for those who need a one-page site with all the information in one placе.",
+            "button_landing": "Get a website",
+            "workTime_landing": "Work time: from 5 days",
+            "whatsInclude_landing": "Included in the price:",
+            "whatsInclude1_landing": " Responsive design for all devices",
+            "whatsInclude2_landing": " Hosting and domain setup",
+            "whatsInclude3_landing": " Installing a secure SSL certificate",
+            "whatsInclude4_landing": " Up to 5 blocks",
+            "whatsNotInclude_landing": " Extra charge:",
+            "whatsNotInclude1_landing": "Development of individual design",
+            "whatsNotInclude2_landing": "Effects and animation",
+            "whatsNotInclude3_landing": "Extra blocks on website"
+        },
+        "Multipage": {
+            "h1_multipage": " Multi-page site",
+            "price_multipage": "from 300$",
+            "description_multipage": " Among the standard pages on sites of this type, sections can be distinguished: \"Home\", \"About the company\", \"Our services / products\", etc.",
+            "button_multipage": "To order a website",
+            "workTime_multipage": "Work time: from 7 days",
+            "whatsInclude_multipage": "Included in the price",
+            "whatsInclude1_multipage": "Responsive design for all devices",
+            "whatsInclude2_multipage": "Hosting and domain setup",
+            "whatsInclude3_multipage": "installing a secure SSL certificate",
+            "whatsInclude4_multipage": "up to 3 pages",
+            "whatsNotInclude_multipage": "Extra charge:",
+            "whatsNotInclude1_multipage": "Development of individual design",
+            "whatsNotInclude2_multipage": "Effects and animation",
+            "whatsNotInclude3_multipage": "Extra pages on website"
+        },
+        "BusinessCard": {
+            "h1_businessCard": "Website business card",
+            "price_businessCard": "from 150$",
+            "description_businessCard": "This site is the best solution if you want to briefly tell about yourself, your company, product or service.",
+            "button_businessCard": "To order a website ",
+            "workTime_businessCard": "Work time: from 3 days",
+            "whatsInclude_businessCard": "Included in the price",
+            "whatsInclude1_businessCard": " Responsive template design for all devices",
+            "whatsInclude2_businessCard": "Setting up hosting and domain",
+            "whatsInclude3_businessCard": "Installing a secure SSL certificate",
+            "whatsInclude4_businessCard": "Up to 3 blocks per site",
+            "whatsNotInclude_businessCard": "Extra charge:",
+            "whatsNotInclude1_businessCard": "Individual design development",
+            "whatsNotInclude2_businessCard": "Effects and Animation",
+            "whatsNotInclude3_businessCard": "Extra blocks on website"
+        }
+    },
     "Projects": {
         "myProjects": "My projects",
         "createdWith": "Created with:",
-        "follow": "Follow",
+        "lookInto": "Look into",
         "Rental": {
             "h2text": " Website for daily rent of apartments in St. Petersburg",
             "p2text": " Multi-page website for real estate rental in St. Petersburg"

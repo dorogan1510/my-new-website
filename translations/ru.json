@@ -6,14 +6,8 @@
         "header_link4": "Цены",
         "h1_main": "Данила Фролов",
         "p_main": "Привет! Я Данила, и я фронтенд разработчик. Я разрабатываю интернет-проекты и с удовольствием сделаю для вас сайт или приложение на ваш вкус. Напишите мне и мы обсудим все детали.",
-        "letMeShowYouMyProjects": "Взгляни на мои проекты",
-        "backToMain": "Вернуться на главную",
         "scroll": "ЛИСТАЙ ВНИЗ",
-        "created": "Сделано при помощи:",
-        "openProject": "Открыть проект",
-        "previousProject": "Предыдущий проект",
-        "nextProject": "Следующий проект",
-        "otherProjects": "Другие проекты"
+        "created": "Сделано при помощи:"
     },
     "About": {
         "h1_about": "Обо мне",
@@ -51,11 +45,61 @@
         "adobeAfterEffects_about": "Adobe After Effects",
         "adobeAfterEffectsDescription_about": "Использую в работе с моушн дизайном"
     },
-    "Price": {},
+    "Price": {
+        "Prices": "Цены",
+        "Landing": {
+            "h1_landing": "Лендинг",
+            "price_landing": "от ₽15000",
+            "description_landing": "Сайт с одной страницей, в основе которого — коммерческое предложение.",
+            "button_landing": "Заказать сайт",
+            "workTime_landing": "Срок работы: от 5 дней",
+            "whatsInclude_landing": "Входит в стоимость:",
+            "whatsInclude1_landing": "Адаптивный шаблонный дизайн под все устройства",
+            "whatsInclude2_landing": "Настройка домена и хостинга",
+            "whatsInclude3_landing": "Установка безопасного SSL сертификата",
+            "whatsInclude4_landing": "До 5 блоков на сайте",
+            "whatsNotInclude_landing": "Оплачивается дополнительно:",
+            "whatsNotInclude1_landing": "Разработка индивидуального дизайна",
+            "whatsNotInclude2_landing": "Эффекты и анимация",
+            "whatsNotInclude3_landing": "Дополнительные блоки на сайте"
+        },
+        "Multipage": {
+            "h1_multipage": "Многостраничный сайт",
+            "price_multipage": "от ₽20000",
+            "description_multipage": "Среди стандартных страниц на сайтах такого типа можно выделить разделы: «Главная», «О компании», «Наши услуги/товары» и т.д.",
+            "button_multipage": "Заказать сайт",
+            "workTime_multipage": "Срок работы: от 7 дней",
+            "whatsInclude_multipage": "Входит в стоимость",
+            "whatsInclude1_multipage": "Адаптивный шаблонный дизайн под все устройства",
+            "whatsInclude2_multipage": "Настройка хостинга и домена",
+            "whatsInclude3_multipage": "Установка безопасного SSL сертификата",
+            "whatsInclude4_multipage": "До 3 страниц",
+            "whatsNotInclude_multipage": "Оплачивается дополнительно:",
+            "whatsNotInclude1_multipage": "Разработка индивидуального дизайна",
+            "whatsNotInclude2_multipage": "Эффекты и анимация",
+            "whatsNotInclude3_multipage": "Дополнительные страницы на сайте"
+        },
+        "BusinessCard": {
+            "h1_businessCard": "Сайт визитка",
+            "price_businessCard": "от ₽10000",
+            "description_businessCard": "Такой сайт — лучшее решение, если вы хотите коротко рассказать о себе, своей компании, товаре или услуге.",
+            "button_businessCard": "Заказать сайт",
+            "workTime_businessCard": "Срок работы: от 3 дней",
+            "whatsInclude_businessCard": "Входит в стоимость",
+            "whatsInclude1_businessCard": "Адаптивный шаблонный дизайн под все устройства",
+            "whatsInclude2_businessCard": "Настройка хостинга и домена",
+            "whatsInclude3_businessCard": "Установка безопасного SSL сертификата",
+            "whatsInclude4_businessCard": "До 3 блоков на сайте",
+            "whatsNotInclude_businessCard": "Оплачивается дополнительно:",
+            "whatsNotInclude1_businessCard": "Разработка индивидуального дизайна",
+            "whatsNotInclude2_businessCard": "Эффекты и анимация",
+            "whatsNotInclude3_businessCard": "Дополнительные блоки на сайте"
+        }
+    },
     "Projects": {
         "myProjects": "Мои проекты",
         "createdWith": "Сделано при помощи:",
-        "follow": "Смотреть",
+        "lookInto": "Смотреть",
 
         "Rental": {
             "h2text": "Сайт посуточной аренды квартир в Санкт-Петербурге",
@@ -98,6 +142,7 @@
             "p2text": "Присутствует базовый функционал и статистика по вашим тратам"
         }
     },
+
     "LocaleSwitcher": {
         "label": "Change language",
         "locale": "{locale, select, ru {RU} en {EN} other {Unknown}}"

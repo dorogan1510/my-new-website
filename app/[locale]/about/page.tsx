@@ -6,7 +6,7 @@ import Technologies from './components/Technologies'
 import { useLocale, useTranslations } from 'next-intl'
 
 const About = () => {
-    const t = useTranslations('Index')
+    const t = useTranslations('About')
     return (
         <main>
             <div className={bitter.className}>

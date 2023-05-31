@@ -32,7 +32,7 @@ export default function RootLayout({
     }
     return (
         <html lang={locale} className={inter.className}>
-            <body className='bg-zinc-900 antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-6 mt-8 md:mt-20 lg:mt-32 lg:mx-auto'>
+            <body className='bg-neutral-900 antialiased max-w-5xl mb-40 flex flex-col items-start md:flex-row mx-6 mt-8 md:mt-20 lg:mt-32 lg:mx-auto'>
                 <div>
                     <aside className='md:sticky md:top-10 mb-4 md:mb-0 md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif'>
                         <LocaleSwitcherSelect
@@ -41,7 +41,7 @@ export default function RootLayout({
                         >
                             {['ru', 'en'].map(element => (
                                 <option
-                                    className='bg-zinc-900'
+                                    className='bg-neutral-900'
                                     key={element}
                                     value={element}
                                 >

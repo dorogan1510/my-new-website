@@ -25,7 +25,7 @@ export default function Home() {
                             target='_blank'
                         >
                             <svg
-                                className='fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300'
+                                className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
                                 width='35'
                                 height='35'
@@ -43,7 +43,7 @@ export default function Home() {
                             target='_blank'
                         >
                             <svg
-                                className='fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300'
+                                className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
                                 width='35'
                                 height='35'
@@ -61,7 +61,7 @@ export default function Home() {
                             target='_blank'
                         >
                             <svg
-                                className='fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300'
+                                className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
                                 width='35'
                                 height='35'
@@ -77,7 +77,7 @@ export default function Home() {
                             target='_blank'
                         >
                             <svg
-                                className='fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300'
+                                className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
                                 width='35'
                                 height='35'
@@ -93,7 +93,7 @@ export default function Home() {
                             target='_blank'
                         >
                             <svg
-                                className='fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300'
+                                className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
                                 width='35'
                                 height='35'

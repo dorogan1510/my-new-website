@@ -17,56 +17,7 @@ import { useTranslations } from 'next-intl'
 const Projects = () => {
     const t = useTranslations('Projects')
 
-    const ALL_PROJECTS_TEXT = [
-        {
-            id: '10',
-            h2text: t('Rental.h2text'),
-            p2text: t('Rental.p2text'),
-            litext: ['Next.js 13', 'Typescript', 'MaterialUI', 'Sass'],
-            href: 'https://www.welcometospb.ru/',
-            img: rental_screen,
-        },
-        {
-            id: '9',
-            h2text: t('LanguageTutor.h2text'),
-            p2text: t('LanguageTutor.p2text'),
-            litext: ['Next.js 13', 'Typescript', 'MaterialUI', 'Sass'],
-            href: 'https://www.zazafox.ru/',
-            img: anastasia_business_card,
-        },
-        {
-            id: '8',
-            h2text: t('ChildFootbalClub.h2text'),
-            p2text: t('ChildFootbalClub.p2text'),
-            litext: ['Next.js 13', 'Typescript', 'MaterialUI'],
-            href: 'https://www.dfk-bezenchuk.ru/',
-            img: child_club_screen,
-        },
-        // {
-        //     id: '8',
-        //     h2text: 'Сайт для продажи курса английского языка',
-        //     p2text: 'Коммерческий лендинг для продажи онлайн курса английского языка',
-        //     litext: ['JS ES6+', 'SASS', 'Laravel Mix'],
-        //     href: 'https://easyenglishyou.ru/',
-        //     img: english_course_screen,
-        // },
-        {
-            id: '7',
-            h2text: t('KsushaBusinessCard.h2text'),
-            p2text: t('KsushaBusinessCard.p2text'),
-            litext: ['JS ES6+', 'SASS', 'Laravel Mix', 'CSS animations'],
-            href: 'https://easyenglishyou.ru',
-            img: business_card_screen,
-        },
-        {
-            id: '6',
-            h2text: t('LanguageSchoolWebsite.h2text'),
-            p2text: t('LanguageSchoolWebsite.p2text'),
-            litext: ['JS ES6+', 'SASS', 'Laravel Mix'],
-
-            href: 'https://pollyglotiki.com/',
-            img: polina_site_screen,
-        },
+    const ALL_PROJECTS_TEXT1 = [
         {
             id: '5',
             h2text: t('OnlineShop.h2text'),
@@ -114,61 +65,144 @@ const Projects = () => {
             img: expense_tracker_screen,
         },
     ]
+    const ALL_PROJECTS_TEXT2 = [
+        {
+            id: '10',
+            h2text: t('Rental.h2text'),
+            p2text: t('Rental.p2text'),
+            litext: ['Next.js 13', 'Typescript', 'MaterialUI', 'Sass'],
+            href: 'https://www.welcometospb.ru/',
+            img: rental_screen,
+        },
+        {
+            id: '9',
+            h2text: t('LanguageTutor.h2text'),
+            p2text: t('LanguageTutor.p2text'),
+            litext: ['Next.js 13', 'Typescript', 'MaterialUI', 'Sass'],
+            href: 'https://www.zazafox.ru/',
+            img: anastasia_business_card,
+        },
+        {
+            id: '8',
+            h2text: t('ChildFootbalClub.h2text'),
+            p2text: t('ChildFootbalClub.p2text'),
+            litext: ['Next.js 13', 'Typescript', 'MaterialUI'],
+            href: 'https://www.dfk-bezenchuk.ru/',
+            img: child_club_screen,
+        },
+        {
+            id: '7',
+            h2text: t('KsushaBusinessCard.h2text'),
+            p2text: t('KsushaBusinessCard.p2text'),
+            litext: ['JS ES6+', 'SASS', 'Laravel Mix', 'CSS animations'],
+            href: 'https://easyenglishyou.ru',
+            img: business_card_screen,
+        },
+        {
+            id: '6',
+            h2text: t('LanguageSchoolWebsite.h2text'),
+            p2text: t('LanguageSchoolWebsite.p2text'),
+            litext: ['JS ES6+', 'SASS', 'Laravel Mix'],
+
+            href: 'https://pollyglotiki.com/',
+            img: polina_site_screen,
+        },
+    ]
 
     return (
         <main>
             <div className={bitter.className}>
-                <h1 className='text-3xl md:text-4xl font-bold mb-4'>
+                <h1 className='text-3xl md:text-4xl font-bold mb-6'>
                     {t('myProjects')}
                 </h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                {ALL_PROJECTS_TEXT.map((data: any) => (
-                    <div
-                        key={data.id}
-                        className='max-w-sm mb-6 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 '
-                    >
-                        <div className='pointer-events-none'>
-                            <div className='absolute inset-0 z-0  transition duration-1000 [mask-img:linear-gradient(black,transparent)]'></div>
-                            <div className='absolute inset-0 z-10  bg-gradient-to-br opacity-100  via-zinc-100/10  transition duration-1000 group-hover:opacity-50 '></div>
-                            <div className='absolute inset-0 z-10 opacity-0 mix-blend-overlay transition duration-1000 group-hover:opacity-100'></div>
+            <div className='flex flex-col md:flex-row justify-center items-start gap-4'>
+                <div className='grid grid-cols-1 gap-2'>
+                    {ALL_PROJECTS_TEXT2.map((data: any) => (
+                        <div
+                            key={data.id}
+                            className='max-w-sm mb-6 overflow-hidden relative duration-700 border rounded-xl bg-zinc-800/10 hover:bg-zinc-600/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 '
+                        >
+                            <Link href={data.href}>
+                                <Image
+                                    src={data.img}
+                                    alt={'project image'}
+                                    className='w-full h-auto'
+                                ></Image>
+                                <article className=' w-full p-4 md:p-8'>
+                                    <h2
+                                        id='featured-post'
+                                        className='mb-4 text-xl font-bold text-zinc-100  sm:text-2xl font-display'
+                                    >
+                                        {data.h2text}
+                                    </h2>
+                                    <p className='mb-4  duration-150 text-zinc-400 '>
+                                        {data.p2text}
+                                    </p>
+                                    <p className='mb-1 text-zinc-400'>
+                                        {t('createdWith')}
+                                    </p>
+                                    <ul className='mb-4 text-zinc-400'>
+                                        {data.litext.map(
+                                            (nestedData: any, i: any) => (
+                                                <li key={nestedData[i]}>
+                                                    {nestedData}
+                                                </li>
+                                            )
+                                        )}
+                                    </ul>
+                                    <p className=' text-zinc-300 hover:text-zinc-50 lg:block'>
+                                        {t('lookInto')}{' '}
+                                        <span aria-hidden='true'>→</span>
+                                    </p>
+                                </article>
+                            </Link>
                         </div>
-                        <Link href={data.href}>
-                            <Image
-                                src={data.img}
-                                alt={'project image'}
-                                className='w-full h-auto'
-                            ></Image>
-                            <article className=' w-full h-full p-4 md:p-8'>
-                                <h2
-                                    id='featured-post'
-                                    className='mb-4 text-2xl font-bold text-zinc-100  sm:text-2xl font-display'
-                                >
-                                    {data.h2text}
-                                </h2>
-                                <p className='mb-4  duration-150 text-zinc-400 '>
-                                    {data.p2text}
-                                </p>
-                                <p className='mb-1 text-zinc-400'>
-                                    {t('createdWith')}
-                                </p>
-                                <ul className='mb-4 text-zinc-400'>
-                                    {data.litext.map(
-                                        (nestedData: any, i: any) => (
-                                            <li key={nestedData[i]}>
-                                                {nestedData}
-                                            </li>
-                                        )
-                                    )}
-                                </ul>
-                                <p className='hidden text-zinc-300 hover:text-zinc-50 lg:block'>
-                                    {t('follow')}{' '}
-                                    <span aria-hidden='true'>→</span>
-                                </p>
-                            </article>
-                        </Link>
-                    </div>
-                ))}
+                    ))}
+                </div>
+                <div className='grid grid-cols-1 gap-2'>
+                    {ALL_PROJECTS_TEXT1.map((data: any) => (
+                        <div
+                            key={data.id}
+                            className='max-w-sm mb-6 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-600/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 '
+                        >
+                            <Link href={data.href}>
+                                <Image
+                                    src={data.img}
+                                    alt={'project image'}
+                                    className='w-full h-auto'
+                                ></Image>
+                                <article className=' w-full p-4 md:p-8'>
+                                    <h2
+                                        id='featured-post'
+                                        className='mb-4 text-xl font-bold text-zinc-100  sm:text-2xl font-display'
+                                    >
+                                        {data.h2text}
+                                    </h2>
+                                    <p className='mb-4  duration-150 text-zinc-400 '>
+                                        {data.p2text}
+                                    </p>
+                                    <p className='mb-1 text-zinc-400'>
+                                        {t('createdWith')}
+                                    </p>
+                                    <ul className='mb-4 text-zinc-400'>
+                                        {data.litext.map(
+                                            (nestedData: any, i: any) => (
+                                                <li key={nestedData[i]}>
+                                                    {nestedData}
+                                                </li>
+                                            )
+                                        )}
+                                    </ul>
+                                    <p className=' text-zinc-300 hover:text-zinc-50 lg:block'>
+                                        {t('lookInto')}{' '}
+                                        <span aria-hidden='true'>→</span>
+                                    </p>
+                                </article>
+                            </Link>
+                        </div>
+                    ))}
+                </div>
             </div>
         </main>
     )
