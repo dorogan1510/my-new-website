@@ -1,8 +1,7 @@
-import SwiperComponent from '@/app/about/components/SwiperComponent'
 import React from 'react'
 
-const page = () => {
+const Price = () => {
     return <div>price</div>
 }
 
-export default page
+export default Price

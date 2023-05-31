@@ -1,81 +1,79 @@
-import { bitter } from '@/app/layout'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
 const Technologies = () => {
+    const t = useTranslations('Index')
     return (
         <>
             <h2 className='text-center md:text-left mb-8 text-xl  text-zinc-800 dark:text-zinc-100 lg:text-2xl'>
-                Технологии которые я использую в своей работе
+                {t('whatIUseInMyWork')}
             </h2>
             <div className='lg:mx-auto'>
                 <section className='mb-8'>
                     <div className='flex flex-col md:flex-row md:justify-center gap-4 '>
                         <div className='flex-1 border-0 pl-0 lg:col-span-2 text-zinc-800 dark:text-zinc-100 md:pl-6 md:border-l md:border-zinc-200  md:dark:border-zinc-700/40'>
                             <h2 className='sticky top-5'>
-                                Языки програмирования, библиотеки и фреймворки
+                                {t('programmingLanguages_about')}
                             </h2>
                         </div>
                         <div className='flex-1'>
                             <ul className='space-y-16'>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        JavaScript
+                                        {t('javascript_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        ES5: если приходится работать со старым
-                                        кодом. ES6+: во всех остальных случаях
+                                        {t('javascriptDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Typescript
+                                        {t('typescript_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        На данный момент использую его во всех
-                                        новых сайтах и приложениях
+                                        {t('typescriptDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        React.js
+                                        {t('react_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Next.js 13: использую во всех новых
-                                        сайтах и приложениях, в том числе и на
-                                        этом сайте
+                                        {t('reactDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Стейт менеджеры
+                                        {t('stateManager_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Redux Toolkit, MobX
+                                        {t('stateManagerDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        CSS библиотеки и препроцессоры
+                                        {t('cssFrameworks_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        SCSS/SASS, CSS modules, Tailwind,
-                                        MaterialUI, Bootstrap
+                                        {t('cssFrameworksDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Анимации
+                                        {t('animation_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Framer-motion, React Transition Group
+                                        {t('animationDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Система контроля версий
+                                        {t('controlVersionSystem_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Git, Github
+                                        {t(
+                                            'controlVersionSystemDescription_about'
+                                        )}
                                     </p>
                                 </li>
                             </ul>
@@ -89,37 +87,33 @@ const Technologies = () => {
                     <div className='flex flex-col md:flex-row md:justify-center gap-4 '>
                         <div className=' flex-1 border-0 pl-0 lg:col-span-2 text-zinc-800 dark:text-zinc-100 md:pl-6 md:border-l md:border-zinc-200  md:dark:border-zinc-700/40'>
                             <h2 className='sticky top-5'>
-                                Сборщики и упаковщики
+                                {t('bundlers_about')}
                             </h2>
                         </div>
                         <div className='flex-1'>
                             <ul className='space-y-16'>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Laravel mix
+                                        {t('laravelMix_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Использую в том случае, если я пишу сайт
-                                        на чистом html/css/javascript без
-                                        дополнительных библиотек и фреймворков
+                                        {t('laravelMixDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Turbopack
+                                        {t('turbopack_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Используется по умолчанию начиная с
-                                        версии NEXT.js 13
+                                        {t('turbopackDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Webpack
+                                        {t('webpack_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Используется по умолчанию в библиотеке
-                                        React.js
+                                        {t('webpackDescription_about')}
                                     </p>
                                 </li>
                             </ul>
@@ -132,43 +126,42 @@ const Technologies = () => {
                 <section className='pb-8'>
                     <div className='flex flex-col md:flex-row md:justify-center gap-4 '>
                         <h2 className='flex-1 border-0 pl-0 lg:col-span-2 text-zinc-800 dark:text-zinc-100 md:pl-6 md:border-l md:border-zinc-200  md:dark:border-zinc-700/40'>
-                            Дизайн
+                            {t('design_about')}
                         </h2>
                         <div className='flex-1'>
                             <ul className='space-y-16'>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Figma
+                                        {t('figma_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Использую чаще всего в разработке веб
-                                        дизайна
+                                        {t('figmaDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Adobe Photoshop
+                                        {t('adobePhotoshop_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Использую в работе с изображениями
+                                        {t('adobePhotoshopDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Adobe XD
+                                        {t('AdobeXd_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Использую в случае, если по каким-то
-                                        причинам не получается использовать
-                                        фигму
+                                        {t('AdobeXdDescription_about')}
                                     </p>
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight text-zinc-800 dark:text-zinc-100'>
-                                        Adobe After Effects
+                                        {t('adobeAfterEffects_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400'>
-                                        Использую в работе с моушн дизайном
+                                        {t(
+                                            'adobeAfterEffectsDescription_about'
+                                        )}
                                     </p>
                                 </li>
                             </ul>

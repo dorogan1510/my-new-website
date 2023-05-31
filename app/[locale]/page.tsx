@@ -3,27 +3,21 @@ import Link from 'next/link'
 import { bitter, oswald } from './layout'
 import img1 from '@/public/img/me_photo.webp'
 import { Balancer } from 'react-wrap-balancer'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
 
 export default function Home() {
-    const t = useTranslations('LocaleSwitcher')
-
+    const t = useTranslations('Index')
     return (
         <main>
-            <h1>{t('label')}</h1>
             <div className={bitter.className}>
                 <h1 className='text-3xl md:text-4xl font-bold mb-4'>
-                    Данила Фролов
+                    {t('h1_main')}
                 </h1>
             </div>
             <div className='flex flex-col md:flex-row justify-between  mb-4'>
                 <div className='flex flex-col justify-between order-2 md:order-1'>
-                    <p className='m-0 mb-6'>
-                        Привет! Я Данила, и я фронтенд разработчик. Я
-                        разрабатываю интернет-проекты и с удовольствием сделаю
-                        для вас сайт или приложение на ваш вкус. Напишите мне и
-                        мы обсудим все детали.
-                    </p>
+                    <p className='m-0 mb-6'>{t('p_main')}</p>
                     <div className='flex gap-4'>
                         <Link
                             href={'https://t.me/danfrolov94'}

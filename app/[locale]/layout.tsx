@@ -2,8 +2,9 @@ import Link from 'next/link'
 import './globals.css'
 import { Bitter, Inter, Oswald } from 'next/font/google'
 import SideBar from './components/Sidebar'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
+import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -23,15 +24,40 @@ export default function RootLayout({
     params: any
 }) {
     const locale = useLocale()
+    const t = useTranslations('LocaleSwitcher')
+    const translate = useTranslations('Index')
 
     if (params.locale !== locale) {
         notFound()
     }
-
     return (
         <html lang={locale} className={inter.className}>
-            <body className='antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-6 mt-8 md:mt-20 lg:mt-32 lg:mx-auto'>
-                <SideBar />
+            <body className='bg-zinc-900 antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-6 mt-8 md:mt-20 lg:mt-32 lg:mx-auto'>
+                <div>
+                    <aside className='md:sticky md:top-10 mb-4 md:mb-0 md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif'>
+                        <LocaleSwitcherSelect
+                            defaultValue={locale}
+                            label={t('label')}
+                        >
+                            {['ru', 'en'].map(element => (
+                                <option
+                                    className='bg-zinc-900'
+                                    key={element}
+                                    value={element}
+                                >
+                                    {t('locale', { locale: element })}
+                                </option>
+                            ))}
+                        </LocaleSwitcherSelect>
+                        <SideBar
+                            locale={locale}
+                            headerLink_1={translate('header_link1')}
+                            headerLink_2={translate('header_link2')}
+                            headerLink_3={translate('header_link3')}
+                            headerLink_4={translate('header_link4')}
+                        />
+                    </aside>
+                </div>
                 {children}
             </body>
         </html>

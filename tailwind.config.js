@@ -21,5 +21,5 @@ module.exports = {
             display: ['Oswald', 'system-ui'],
         },
     },
-    plugins: [require('@tailwindcss/typography')],
+    plugins: [],
 }

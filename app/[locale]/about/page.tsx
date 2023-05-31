@@ -3,20 +3,20 @@ import Link from 'next/link'
 import { bitter } from '../layout'
 import SwiperComponent from './components/SwiperComponent'
 import Technologies from './components/Technologies'
+import { useLocale, useTranslations } from 'next-intl'
 
-const about = () => {
+const About = () => {
+    const t = useTranslations('Index')
     return (
         <main>
             <div className={bitter.className}>
-                <h1 className='text-3xl md:text-4xl font-bold mb-4'>Обо мне</h1>
+                <h1 className='text-3xl md:text-4xl font-bold mb-4'>
+                    {t('h1_about')}
+                </h1>
             </div>
 
             <div className=' mb-4'>
-                <p className='m-0 mb-6'>
-                    Я фронтенд разработчик, фрилансер и путешественник Я
-                    путешествую по миру, знакомлюсь с культурой разных стран и
-                    работаю в процессе. Сейчас я живу в Таиланде.
-                </p>
+                <p className='m-0 mb-6'>{t('p_about')}</p>
             </div>
             <SwiperComponent />
             <Technologies />
@@ -24,4 +24,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About

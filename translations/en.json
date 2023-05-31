@@ -1,0 +1,104 @@
+{
+    "Index": {
+        "header_link1": "Main",
+        "header_link2": "About me",
+        "header_link3": "Projects",
+        "header_link4": "Prices",
+        "h1_main": "Danila Frolov",
+        "p_main": "Hi! I'm Danila and I'm a frontend developer. I develop Internet projects and will be happy to make a website or application for you according to your taste. Write to me and we will discuss all the details.",
+        "letMeShowYouMyProjects": "Let me show you my projects",
+        "backToMain": "Back to main",
+        "scroll": "SCROLL DOWN",
+        "created": "Created with:",
+        "openProject": "Open project",
+        "previousProject": "Previous project",
+        "nextProject": "Next project",
+        "otherProjects": "Other projects"
+    },
+    "About": {
+        "h1_about": "About me",
+        "p_about": "I am a frontend developer, freelancer and traveler. getting to know the culture of different countries and working in the process. Now I'm living in Thailand.",
+        "whatIUseInMyWork": "What do I use in my work?",
+        "programmingLanguages_about": "Programming languages, libraries and frameworks",
+        "javascript_about": "Javascript",
+        "javascriptDescription_about": "ES5: if I have to work with old code. ES6+: in all other cases ",
+        "typescript_about": "Typescript",
+        "typescriptDescription_about": "At the moment I use it in all new websites and applications",
+        "react_about": "React.js",
+        "reactDescription_about": "Next.js 13: use in all new projects ",
+        "stateManager_about": "State managers",
+        "stateManagerDescription_about": "Redux Toolkit, MobX, Zustand",
+        "cssFrameworks_about": "CSS libraries and preprocessors",
+        "cssFrameworksDescription_about": "SCSS/SASS, CSS modules, Tailwind, MaterialUI, Bootstrap",
+        "animation_about": "Animations",
+        "animationDescription_about": "Framer-motion, React Transition Group",
+        "controlVersionSystem_about": "Version control system",
+        "controlVersionSystemDescription_about": "Git, Github",
+        "bundlers_about": "Pickers and Packers",
+        "laravelMix_about": "Laravel mix",
+        "laravelMixDescription_about": " I use it if I develop a website on a clean html/css/javascript without additional libraries and frameworks",
+        "turbopack_about": "Turbopack",
+        "turbopackDescription_about": "Used in beta version Next.js 13",
+        "webpack_about": "Webpack",
+        "webpackDescription_about": "Used by default in the React.js",
+        "design_about": "Design",
+        "figma_about": "Figma",
+        "figmaDescription_about": "Most often used in web design development",
+        "adobePhotoshop_about": "Adobe Photoshop",
+        "adobePhotoshopDescription_about": "Used in working with images",
+        "AdobeXd_about": "Adobe XD",
+        "AdobeXdDescription_about": "I use it if for some reason I can’t use figma",
+        "adobeAfterEffects_about": "Adobe After Effects",
+        "adobeAfterEffectsDescription_about": "I use it in my work with motion design"
+    },
+    "Price": {},
+    "Projects": {
+        "myProjects": "My projects",
+        "createdWith": "Created with:",
+        "follow": "Follow",
+        "Rental": {
+            "h2text": " Website for daily rent of apartments in St. Petersburg",
+            "p2text": " Multi-page website for real estate rental in St. Petersburg"
+        },
+        "LanguageTutor": {
+            "h2text": "Website for the teacher of foreign languages",
+            "p2text": "A landing page with smooth animations and all the necessary information"
+        },
+        "ChildFootbalClub": {
+            "h2text": "Kids football club website",
+            "p2text": "Landing page of a children's football club from the Samara region"
+        },
+        "KsushaBusinessCard": {
+            "h2text": "Business card website",
+            "p2text": "Landing for a teacher of foreign languages. CSS animations, responsive layout, all information on one page"
+        },
+        "LanguageSchoolWebsite": {
+            "h2text": "English language school website",
+            "p2text": "English language school landing page where you can choose your teacher and start learning English"
+        },
+        "OnlineShop": {
+            "h2text": "Online shop in test mode",
+            "p2text": "An online store with a fake API and basic functionality"
+        },
+        "TodoList": {
+            "h2text": "Todo list",
+            "p2text": "Minimalist todo list with basic functionality and smooth animations"
+        },
+        "WeatherWidget": {
+            "h2text": "Weather widget",
+            "p2text": "Find out the weather anywhere in the world and enjoy the best photos of this place"
+        },
+        "EvilCalculator": {
+            "h2text": "Evil calculator",
+            "p2text": "A mini game where you have to go through a small quest, play Hangman and finally get your answer"
+        },
+        "ExpenseTracker": {
+            "h2text": "Expense tracker",
+            "p2text": "Basic functionality and statistics on your spending"
+        }
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, ru {RU} en {EN} other {Unknown}}"
+    }
+}
