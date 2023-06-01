@@ -123,7 +123,7 @@ const Projects = () => {
                             key={data.id}
                             className='max-w-sm mb-6 overflow-hidden relative duration-700 border rounded-xl bg-zinc-800/10 hover:bg-zinc-600/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 '
                         >
-                            <Link href={data.href}>
+                            <Link href={data.href} target='_blank'>
                                 <Image
                                     src={data.img}
                                     alt={'project image'}

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { bitter } from '../layout'
 import { Balancer } from 'react-wrap-balancer'
 import { useTranslations } from 'next-intl'
+import PriceCurrencySwitcher from './components/PriceCurrencySwitcher'
 
 const includedFeatures = [
     'Private forum access',
@@ -13,6 +14,8 @@ const includedFeatures = [
 
 const Price = () => {
     const t = useTranslations('Price')
+
+    const price_from_word = t('Price_from_word')
 
     const ALL_PRICE_TEXT = [
         {
@@ -32,8 +35,8 @@ const Price = () => {
             ],
             whats_include: t('Landing.whatsInclude_landing'),
             whats_not_include: t('Landing.whatsNotInclude_landing'),
-            price: t('Landing.price_landing'),
-            button: t('Landing.button_landing'),
+            price_rub: t('Landing.price_rub_landing'),
+            price_usd: t('Landing.price_usd_landing'),
             workTime: t('Landing.workTime_landing'),
         },
         {
@@ -53,8 +56,8 @@ const Price = () => {
             ],
             whats_include: t('Multipage.whatsInclude_multipage'),
             whats_not_include: t('Multipage.whatsNotInclude_multipage'),
-            price: t('Multipage.price_multipage'),
-            button: t('Multipage.button_multipage'),
+            price_rub: t('Multipage.price_rub_multipage'),
+            price_usd: t('Multipage.price_usd_multipage'),
             workTime: t('Multipage.workTime_multipage'),
         },
         {
@@ -74,8 +77,8 @@ const Price = () => {
             ],
             whats_include: t('BusinessCard.whatsInclude_businessCard'),
             whats_not_include: t('BusinessCard.whatsNotInclude_businessCard'),
-            price: t('BusinessCard.price_businessCard'),
-            button: t('BusinessCard.button_businessCard'),
+            price_rub: t('BusinessCard.price_rub_businessCard'),
+            price_usd: t('BusinessCard.price_usd_businessCard'),
             workTime: t('BusinessCard.workTime_businessCard'),
         },
     ]
@@ -88,8 +91,8 @@ const Price = () => {
         not_include: Array<string>
         whats_include: string
         whats_not_include: string
-        price: string
-        button: string
+        price_usd: string
+        price_rub: string
         workTime: string
     }
 
@@ -104,7 +107,7 @@ const Price = () => {
                 {ALL_PRICE_TEXT.map((data: IALL_PRICE_TEXT) => (
                     <div
                         key={data.id}
-                        className='max-w-4xl mb-8  border rounded-xl md:gap-8 border-zinc-600 bg-gradient-to-br from-neutral-900 to-neutral-800 '
+                        className=' max-w-lg md:max-w-4xl border rounded-xl md:gap-8 border-zinc-600 bg-gradient-to-br from-neutral-900 to-neutral-800 '
                     >
                         <article className=' w-full p-4 md:p-8'>
                             <h2
@@ -113,13 +116,13 @@ const Price = () => {
                             >
                                 {data.h1_text}
                             </h2>
-                            <div className='flex flex-col md:flex-row  items-center md:items-start gap-2 md:gap-8 '>
-                                <div>
-                                    <p className='mb-4   duration-150 text-zinc-400 '>
+                            <div className='grid grid-cols-1 cols md:grid-cols-12 items-start gap-2 md:gap-0 '>
+                                <div className=' col-span-1 md:col-span-8'>
+                                    <p className='mb-4 duration-150 text-zinc-400 '>
                                         {data.p_text}
                                     </p>
                                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                                        <div>
+                                        <div className='col-span-1'>
                                             <p className='mb-2 text-zinc-400'>
                                                 {data.whats_include}
                                             </p>
@@ -130,7 +133,7 @@ const Price = () => {
                                                         index
                                                     ) => (
                                                         <div
-                                                            className='grid grid-cols-12 mb-3'
+                                                            className='grid grid-cols-12 md:grid-cols-6 mb-3 items-center md:gap-8'
                                                             key={index}
                                                         >
                                                             <svg
@@ -141,7 +144,7 @@ const Price = () => {
                                                                     1.5
                                                                 }
                                                                 stroke='currentColor'
-                                                                className='w-6 h-6 col-span-2'
+                                                                className='w-6 h-6 stroke-green-600 col-span-1'
                                                             >
                                                                 <path
                                                                     strokeLinecap='round'
@@ -149,7 +152,7 @@ const Price = () => {
                                                                     d='M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
                                                                 />
                                                             </svg>
-                                                            <li className=' text-sm col-span-10'>
+                                                            <li className=' text-sm col-span-11 md:col-span-5'>
                                                                 {nestedData}
                                                             </li>
                                                         </div>
@@ -157,7 +160,7 @@ const Price = () => {
                                                 )}
                                             </ul>
                                         </div>
-                                        <div>
+                                        <div className='col-span-1'>
                                             <p className='mb-2 text-zinc-400'>
                                                 {data.whats_not_include}
                                             </p>
@@ -168,7 +171,7 @@ const Price = () => {
                                                         index
                                                     ) => (
                                                         <div
-                                                            className='grid grid-cols-12 mb-3'
+                                                            className='grid grid-cols-12 md:grid-cols-6 mb-3 items-center '
                                                             key={index}
                                                         >
                                                             <svg
@@ -179,7 +182,7 @@ const Price = () => {
                                                                     1.5
                                                                 }
                                                                 stroke='currentColor'
-                                                                className='w-6 h-6 col-span-2'
+                                                                className='w-6 h-6 stroke-red-600 col-span-1'
                                                             >
                                                                 <path
                                                                     strokeLinecap='round'
@@ -188,7 +191,7 @@ const Price = () => {
                                                                 />
                                                             </svg>
 
-                                                            <li className=' text-sm col-span-10'>
+                                                            <li className=' text-sm col-span-11 md:col-span-5'>
                                                                 {nestedData}
                                                             </li>
                                                         </div>
@@ -198,19 +201,30 @@ const Price = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col justify-center  items-center gap-4'>
-                                    <p className=' text-4xl text-center font-bold'>
-                                        {data.price}
-                                    </p>
+
+                                <hr className='md:hidden border border-zinc-700/40 my-2' />
+
+                                <div className='col-span-1 md:col-span-4 flex flex-col justify-center items-center gap-4'>
+                                    <div className='flex flex-col items-center justify-center gap-2'>
+                                        <p className='text-sm text-zinc-400'>
+                                            {t('ChangeCurrency')}
+                                        </p>
+                                        <PriceCurrencySwitcher
+                                            price_usd={data.price_usd}
+                                            price_rub={data.price_rub}
+                                            price_from_word={price_from_word}
+                                        />
+                                    </div>
+
                                     <button
                                         className=' border-2  transition-all ease-in  hover:border-zinc-400 border-zinc-600  group flex h-min items-center justify-center p-0.5 text-center font-medium focus:z-10 rounded-full'
                                         type='button'
                                     >
-                                        <span className='flex items-center transition-all    rounded-full text-base px-6 py-3 border border-transparent'>
-                                            {data.button}
+                                        <span className='flex items-center transition-all rounded-full text-base px-6 py-3 border border-transparent'>
+                                            {t('button')}
                                         </span>
                                     </button>
-                                    <div className='text-center  text-zinc-400'>
+                                    <div className='text-center text-sm text-zinc-400'>
                                         {data.workTime}
                                     </div>
                                 </div>

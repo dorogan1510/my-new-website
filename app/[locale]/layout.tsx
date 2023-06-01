@@ -5,6 +5,7 @@ import SideBar from './components/Sidebar'
 import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
+import { Dropdown } from 'flowbite-react'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -33,22 +34,22 @@ export default function RootLayout({
     return (
         <html lang={locale} className={inter.className}>
             <body className='bg-neutral-900 antialiased max-w-5xl mb-40 flex flex-col items-start md:flex-row mx-6 mt-8 md:mt-20 lg:mt-32 lg:mx-auto'>
-                <div>
-                    <aside className='md:sticky md:top-10 mb-4 md:mb-0 md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif'>
-                        <LocaleSwitcherSelect
-                            defaultValue={locale}
-                            label={t('label')}
-                        >
-                            {['ru', 'en'].map(element => (
-                                <option
-                                    className='bg-neutral-900'
-                                    key={element}
-                                    value={element}
-                                >
-                                    {t('locale', { locale: element })}
-                                </option>
-                            ))}
-                        </LocaleSwitcherSelect>
+                <div className='md:sticky md:top-10'>
+                    <aside className=' mb-4 md:mb-0 md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif'>
+                        <div className={bitter.className}>
+                            <LocaleSwitcherSelect defaultValue={locale}>
+                                {['ru', 'en'].map(element => (
+                                    <option
+                                        className='bg-neutral-900 font-semibold'
+                                        key={element}
+                                        value={element}
+                                    >
+                                        {t('locale', { locale: element })}
+                                    </option>
+                                ))}
+                            </LocaleSwitcherSelect>
+                        </div>
+
                         <SideBar
                             locale={locale}
                             headerLink_1={translate('header_link1')}

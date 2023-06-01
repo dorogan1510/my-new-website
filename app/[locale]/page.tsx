@@ -8,6 +8,7 @@ import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
 
 export default function Home() {
     const t = useTranslations('Index')
+
     return (
         <main>
             <div className={bitter.className}>
@@ -15,9 +16,14 @@ export default function Home() {
                     {t('h1_main')}
                 </h1>
             </div>
-            <div className='flex flex-col md:flex-row justify-between  mb-4'>
-                <div className='flex flex-col justify-between order-2 md:order-1'>
-                    <p className='m-0 mb-6'>{t('p_main')}</p>
+            <div className='flex flex-col md:flex-row justify-between mb-4 gap-4'>
+                <div className=' flex flex-col justify-between order-2 md:order-1'>
+                    <p className='m-0 mb-2'>
+                        <Balancer>{t('p_main')}</Balancer>
+                    </p>
+                    <p className='m-0 mb-6'>
+                        <Balancer>{t('p_description')}</Balancer>
+                    </p>
                     <div className='flex gap-4'>
                         <Link
                             href={'https://t.me/danfrolov94'}
@@ -27,8 +33,8 @@ export default function Home() {
                             <svg
                                 className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
-                                width='35'
-                                height='35'
+                                width='40'
+                                height='40'
                                 viewBox='0 0 256 256'
                             >
                                 <path
@@ -45,8 +51,8 @@ export default function Home() {
                             <svg
                                 className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
-                                width='35'
-                                height='35'
+                                width='40'
+                                height='40'
                                 viewBox='0 0 30 30'
                             >
                                 <path d='M15 11a4 4 0 1 0 0 8 4 4 0 1 0 0-8Z' />
@@ -63,8 +69,8 @@ export default function Home() {
                             <svg
                                 className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
-                                width='35'
-                                height='35'
+                                width='40'
+                                height='40'
                                 viewBox='0 0 30 30'
                             >
                                 <path d='M4.796 20.836 3.107 27l6.308-1.656z' />
@@ -79,8 +85,8 @@ export default function Home() {
                             <svg
                                 className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
-                                width='35'
-                                height='35'
+                                width='40'
+                                height='40'
                                 viewBox='0 0 30 30'
                             >
                                 <path d='M15 3C8.373 3 3 8.373 3 15c0 5.623 3.872 10.328 9.092 11.63a1.751 1.751 0 0 1-.092-.583v-2.051h-1.508c-.821 0-1.551-.353-1.905-1.009-.393-.729-.461-1.844-1.435-2.526-.289-.227-.069-.486.264-.451.615.174 1.125.596 1.605 1.222.478.627.703.769 1.596.769.433 0 1.081-.025 1.691-.121.328-.833.895-1.6 1.588-1.962-3.996-.411-5.903-2.399-5.903-5.098 0-1.162.495-2.286 1.336-3.233-.276-.94-.623-2.857.106-3.587 1.798 0 2.885 1.166 3.146 1.481A8.993 8.993 0 0 1 15.495 9c1.036 0 2.024.174 2.922.483C18.675 9.17 19.763 8 21.565 8c.732.731.381 2.656.102 3.594.836.945 1.328 2.066 1.328 3.226 0 2.697-1.904 4.684-5.894 5.097C18.199 20.49 19 22.1 19 23.313v2.734c0 .104-.023.179-.035.268C23.641 24.676 27 20.236 27 15c0-6.627-5.373-12-12-12z' />
@@ -95,8 +101,8 @@ export default function Home() {
                             <svg
                                 className='fill-zinc-500 transition group-hover:fill-zinc-600 '
                                 xmlns='http://www.w3.org/2000/svg'
-                                width='35'
-                                height='35'
+                                width='40'
+                                height='40'
                                 viewBox='0 0 30 30'
                             >
                                 <path d='M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm-4.504 5.403c.842 0 1.403.561 1.403 1.309 0 .748-.561 1.309-1.496 1.309C9.561 11.022 9 10.46 9 9.712c0-.748.561-1.309 1.496-1.309zM12 20H9v-8h3v8zm10 0h-2.824v-4.372c0-1.209-.753-1.488-1.035-1.488s-1.224.186-1.224 1.488V20H14v-8h2.918v1.116c.376-.651 1.129-1.116 2.541-1.116S22 13.116 22 15.628V20z' />
@@ -104,7 +110,7 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-                <div className='max-w-[50%] md:max-w-[30%] order-1 md:oder-2'>
+                <div className='max-w-[50%] sm:!max-w-[30%]  order-1 md:oder-2'>
                     <Image
                         src={img1}
                         alt={'my_photo'}

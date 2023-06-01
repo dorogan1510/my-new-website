@@ -61,18 +61,18 @@ export default function Sidebar({
                                 <Link
                                     href={data.href}
                                     className={clsx(
-                                        'transition-all hover:text-neutral-200  flex align-middle',
+                                        'text-sm sm:text-base font-semibold md:text-lg transition-all hover:text-neutral-200  flex align-middle',
                                         {
                                             'text-neutral-500': !isActive,
                                             'font-bold': isActive,
                                         }
                                     )}
                                 >
-                                    <span className='text-sm sm:text-base  relative py-[5px] px-[10px]'>
+                                    <span className=' relative py-[5px] px-[10px]'>
                                         {data.name}
                                         {data.href === pathname ? (
                                             <motion.div
-                                                className='absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]'
+                                                className='absolute inset-0 bg-neutral-800 rounded-md z-[-1]'
                                                 layoutId='sidebar'
                                                 transition={{
                                                     type: 'spring',
