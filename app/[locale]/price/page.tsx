@@ -1,4 +1,3 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import { bitter } from '../layout'
 import { Balancer } from 'react-wrap-balancer'
