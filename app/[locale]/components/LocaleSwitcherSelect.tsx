@@ -6,7 +6,6 @@ import { usePathname } from 'next-intl/client'
 import { ChangeEvent, ReactNode, useTransition } from 'react'
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import { bitter } from '../layout'
 import { Dropdown } from 'flowbite-react'
 

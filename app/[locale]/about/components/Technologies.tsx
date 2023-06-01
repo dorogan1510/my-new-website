@@ -1,13 +1,16 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
+import { bitter } from '../../layout'
 
 const Technologies = () => {
     const t = useTranslations('About')
     return (
         <>
-            <h2 className='text-center md:text-left mb-8 text-xl   text-zinc-100 lg:text-2xl'>
-                {t('whatIUseInMyWork')}
-            </h2>
+            <div className={bitter.className}>
+                <h2 className='text-left mb-8 text-xl font-bold text-zinc-100 lg:text-3xl'>
+                    {t('whatIUseInMyWork')}
+                </h2>
+            </div>
             <div className='lg:mx-auto'>
                 <section className='mb-8'>
                     <div className='flex flex-col md:flex-row md:justify-center gap-4 '>

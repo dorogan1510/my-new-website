@@ -61,7 +61,7 @@ export default function Sidebar({
                                 <Link
                                     href={data.href}
                                     className={clsx(
-                                        'text-sm sm:text-base font-semibold md:text-lg transition-all hover:text-neutral-200  flex align-middle',
+                                        'text-base font-semibold md:text-lg transition-all hover:text-neutral-200  flex align-middle',
                                         {
                                             'text-neutral-500': !isActive,
                                             'font-bold': isActive,

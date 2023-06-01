@@ -11,8 +11,10 @@
     },
     "About": {
         "h1_about": "About me",
-        "p_about": "I'm Danila, a dedicated frontend developer with 2+ years of experience in the field. I specialize in crafting responsive and user-friendly high performance websites that seamlessly adapt to various devices and screen sizes. My journey into frontend development began with a strong fascination for the intersection of technology and design. I am captivated by the power of coding to transform ideas into tangible digital experiences. I have constantly pushed myself to stay up-to-date with the latest web technologies and design trends, allowing me to deliver modern and innovative solutions to myself and my clients.",
-        "p_about_description": "If you're looking for a frontend developer who is dedicated, detail-oriented, and eager to bring your ideas to life, I would love to collaborate with you.",
+        "p_about_1": "I'm Danila, a frontend developer with 2+ years of experience. I specialize in crafting responsive and user-friendly high performance websites that seamlessly adapt to various devices and screen sizes. ",
+        "p_about_2": "My journey into frontend development began with a strong fascination for the intersection of technology and design. I am captivated by the power of coding to transform ideas into tangible digital experiences. ",
+        "p_about_3": "I have constantly pushed myself to stay up-to-date with the latest web technologies and design trends, allowing me to deliver modern and innovative solutions to myself and my clients.",
+        "p_about_4": "If you're looking for a frontend developer who is dedicated, detail-oriented, and eager to bring your ideas to life, I would love to collaborate with you.",
         "p_about_travel": "Also I'm traveling the world, getting to know the culture of different countries and working in the process. Now I'm living in Thailand.",
         "whatIUseInMyWork": "What do I use in my work?",
         "programmingLanguages_about": "Programming languages, libraries and frameworks",
