@@ -1,12 +1,10 @@
 'use client'
 
 import clsx from 'clsx'
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
 import { LayoutGroup, motion } from 'framer-motion'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { bitter } from '../layout'
-import { useLocale, useTranslations } from 'next-intl'
-import LocaleSwitcherSelect from './LocaleSwitcherSelect'
 
 export default function Sidebar({
     locale,

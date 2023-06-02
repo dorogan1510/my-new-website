@@ -1,9 +1,7 @@
-import Link from 'next/link'
-import { bitter } from '../layout'
-import { Balancer } from 'react-wrap-balancer'
 import { useTranslations } from 'next-intl'
-import PriceCurrencySwitcher from './components/PriceCurrencySwitcher'
 import FramerWrapper from '../components/FramerWrapper'
+import { bitter } from '../layout'
+import PriceCurrencySwitcher from './components/PriceCurrencySwitcher'
 
 const Price = () => {
     const t = useTranslations('Price')

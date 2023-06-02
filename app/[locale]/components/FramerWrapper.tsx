@@ -1,7 +1,6 @@
 'use client'
 
-import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { ScriptProps } from 'next/script'
 
 const FramerWrapper = ({ children }: ScriptProps) => {

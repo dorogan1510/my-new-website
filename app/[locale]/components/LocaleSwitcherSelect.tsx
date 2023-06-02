@@ -1,13 +1,9 @@
 'use client'
 
 import clsx from 'clsx'
-import { useRouter } from 'next/navigation'
 import { usePathname } from 'next-intl/client'
+import { useRouter } from 'next/navigation'
 import { ChangeEvent, ReactNode, useTransition } from 'react'
-import { Fragment, useState } from 'react'
-import { Listbox, Transition } from '@headlessui/react'
-import { bitter } from '../layout'
-import { Dropdown } from 'flowbite-react'
 
 type Props = {
     children: ReactNode

@@ -1,11 +1,10 @@
+import img1 from '@/public/img/me_photo.webp'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import { bitter, oswald } from './layout'
-import img1 from '@/public/img/me_photo.webp'
 import { Balancer } from 'react-wrap-balancer'
-import { useLocale, useTranslations } from 'next-intl'
-import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
 import FramerWrapper from './components/FramerWrapper'
+import { bitter } from './layout'
 
 export default function Home() {
     const t = useTranslations('Index')

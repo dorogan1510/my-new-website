@@ -1,11 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { Balancer } from 'react-wrap-balancer'
+import FramerWrapper from '../components/FramerWrapper'
 import { bitter } from '../layout'
 import SwiperComponent from './components/SwiperComponent'
 import Technologies from './components/Technologies'
-import { useLocale, useTranslations } from 'next-intl'
-import { Balancer } from 'react-wrap-balancer'
-import FramerWrapper from '../components/FramerWrapper'
 
 const About = () => {
     const t = useTranslations('About')

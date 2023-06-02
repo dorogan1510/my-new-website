@@ -1,19 +1,14 @@
-import Link from 'next/link'
-import './globals.css'
-import { Bitter, Inter, Oswald } from 'next/font/google'
-import SideBar from './components/Sidebar'
+import { Metadata } from 'next'
 import { useLocale, useTranslations } from 'next-intl'
+import { Bitter, Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
-import { Dropdown } from 'flowbite-react'
-import FramerWrapper from './components/FramerWrapper'
+import SideBar from './components/Sidebar'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
-export const oswald = Oswald({ subsets: ['latin', 'cyrillic'] })
 export const bitter = Bitter({ subsets: ['latin', 'cyrillic'] })
-
-import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: 'Данила Фролов — фронтенд разработчик',
@@ -55,18 +50,8 @@ export const metadata: Metadata = {
         'single page website',
         'selling page',
     ],
-    authors: [
-        { name: 'Seb' },
-        { name: 'Danila Frolov', url: 'https://danfrolov.ru' },
-    ],
-    colorScheme: 'dark',
-    creator: 'Jiachi Liu',
-    publisher: 'Sebastian Markbåge',
-    formatDetection: {
-        email: false,
-        address: false,
-        telephone: false,
-    },
+    authors: [{ name: 'Danila Frolov', url: 'https://danfrolov.ru' }],
+    creator: 'Danila Frolov',
 }
 
 export default function RootLayout({

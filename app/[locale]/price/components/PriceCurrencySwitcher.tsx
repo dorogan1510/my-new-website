@@ -2,7 +2,7 @@
 
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const PriceCurrencySwitcher = ({
     price_usd,
