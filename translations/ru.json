@@ -54,6 +54,13 @@
         "ChangeCurrency": "Сменить валюту",
         "Price_from_word": "от",
         "button": "Заказать сайт",
+        "examples": "Примеры",
+        "example_landing_1": "Лендинг для преподавателя английского языка",
+        "example_landing_2": "Лендинг для детского футбольного клуба",
+        "example_landing_3": "Лендинг для школы английского языка",
+        "example_multipage_1": "Сайт посуточной аренды квартир",
+        "example_multipage_2": "Онлайн магазин в тестовом режиме",
+
         "Landing": {
             "h1_landing": "Лендинг",
             "price_usd_landing": "$200",

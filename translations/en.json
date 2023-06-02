@@ -54,6 +54,12 @@
         "ChangeCurrency": "Change currency",
         "Price_from_word": "from",
         "button": "Get a website",
+        "examples": "Examples",
+        "example_landing_1": "English teacher landing",
+        "example_landing_2": "Kids football club landing",
+        "example_landing_3": "English language school landing",
+        "example_multipage_1": "Apartment rental website",
+        "example_multipage_2": "Online Store in test mode",
         "Landing": {
             "h1_landing": "Landing page",
             "price_usd_landing": "$200",

@@ -49,18 +49,8 @@ const PriceCurrencySwitcher = ({
                             }
                         )}
                     >
-                        <span className=' relative py-[5px] px-[10px]'>
+                        <span className=' py-[5px] px-[10px]'>
                             {data.currency}
-                            {data.state ? (
-                                <motion.div
-                                    className='absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]'
-                                    transition={{
-                                        type: 'spring',
-                                        stiffness: 350,
-                                        damping: 30,
-                                    }}
-                                />
-                            ) : null}
                         </span>
                     </button>
                 ))}

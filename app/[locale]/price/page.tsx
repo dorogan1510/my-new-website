@@ -3,6 +3,8 @@ import Link from 'next/link'
 import FramerWrapper from '../components/FramerWrapper'
 import { bitter } from '../layout'
 import PriceCurrencySwitcher from './components/PriceCurrencySwitcher'
+import ProjectExamplesLanding from './components/ProjectExamplesLanding'
+import ProjectExamplesMultipage from './components/ProjectExamplesMultipage'
 
 const Price = () => {
     const t = useTranslations('Price')
@@ -18,6 +20,7 @@ const Price = () => {
         price_usd: string
         price_rub: string
         workTime: string
+        examplesComponent: any
     }
 
     const ALL_PRICE_TEXT = [
@@ -41,6 +44,14 @@ const Price = () => {
             price_rub: t('Landing.price_rub_landing'),
             price_usd: t('Landing.price_usd_landing'),
             workTime: t('Landing.workTime_landing'),
+            examplesComponent: (
+                <ProjectExamplesLanding
+                    examples={t('examples')}
+                    examples_landing_1={t('example_landing_1')}
+                    examples_landing_2={t('example_landing_2')}
+                    examples_landing_3={t('example_landing_3')}
+                />
+            ),
         },
         {
             id: 2,
@@ -62,28 +73,35 @@ const Price = () => {
             price_rub: t('Multipage.price_rub_multipage'),
             price_usd: t('Multipage.price_usd_multipage'),
             workTime: t('Multipage.workTime_multipage'),
+            examplesComponent: (
+                <ProjectExamplesMultipage
+                    examples={t('examples')}
+                    example_multipage_1={t('example_multipage_1')}
+                    example_multipage_2={t('example_multipage_2')}
+                />
+            ),
         },
-        {
-            id: 3,
-            h1_text: t('BusinessCard.h1_businessCard'),
-            p_text: t('BusinessCard.description_businessCard'),
-            include: [
-                t('BusinessCard.whatsInclude1_businessCard'),
-                t('BusinessCard.whatsInclude2_businessCard'),
-                t('BusinessCard.whatsInclude3_businessCard'),
-                t('BusinessCard.whatsInclude4_businessCard'),
-            ],
-            not_include: [
-                t('BusinessCard.whatsNotInclude1_businessCard'),
-                t('BusinessCard.whatsNotInclude2_businessCard'),
-                t('BusinessCard.whatsNotInclude3_businessCard'),
-            ],
-            whats_include: t('BusinessCard.whatsInclude_businessCard'),
-            whats_not_include: t('BusinessCard.whatsNotInclude_businessCard'),
-            price_rub: t('BusinessCard.price_rub_businessCard'),
-            price_usd: t('BusinessCard.price_usd_businessCard'),
-            workTime: t('BusinessCard.workTime_businessCard'),
-        },
+        // {
+        //     id: 3,
+        //     h1_text: t('BusinessCard.h1_businessCard'),
+        //     p_text: t('BusinessCard.description_businessCard'),
+        //     include: [
+        //         t('BusinessCard.whatsInclude1_businessCard'),
+        //         t('BusinessCard.whatsInclude2_businessCard'),
+        //         t('BusinessCard.whatsInclude3_businessCard'),
+        //         t('BusinessCard.whatsInclude4_businessCard'),
+        //     ],
+        //     not_include: [
+        //         t('BusinessCard.whatsNotInclude1_businessCard'),
+        //         t('BusinessCard.whatsNotInclude2_businessCard'),
+        //         t('BusinessCard.whatsNotInclude3_businessCard'),
+        //     ],
+        //     whats_include: t('BusinessCard.whatsInclude_businessCard'),
+        //     whats_not_include: t('BusinessCard.whatsNotInclude_businessCard'),
+        //     price_rub: t('BusinessCard.price_rub_businessCard'),
+        //     price_usd: t('BusinessCard.price_usd_businessCard'),
+        //     workTime: t('BusinessCard.workTime_businessCard'),
+        // },
     ]
 
     return (
@@ -101,12 +119,16 @@ const Price = () => {
                             className=' max-w-lg md:max-w-4xl border rounded-xl md:gap-8 border-zinc-600 bg-gradient-to-br from-neutral-900 to-neutral-800 '
                         >
                             <article className=' w-full p-4 md:p-8'>
-                                <h2
-                                    id='featured-post'
-                                    className='mb-4 text-3xl font-bold text-zinc-100  font-display'
-                                >
-                                    {data.h1_text}
-                                </h2>
+                                <div className='flex flex-col sm:flex-row justify-between mb-4 sm:mb-0 '>
+                                    <h2
+                                        id='featured-post'
+                                        className='mb-4 text-3xl font-bold text-zinc-100  font-display'
+                                    >
+                                        {data.h1_text}
+                                    </h2>
+                                    {data.examplesComponent}
+                                </div>
+
                                 <div className='grid grid-cols-1 cols md:grid-cols-12 items-start gap-2 md:gap-0 '>
                                     <div className=' col-span-1 md:col-span-8'>
                                         <p className='mb-4 duration-150 text-zinc-400 '>
@@ -173,12 +195,12 @@ const Price = () => {
                                                                         1.5
                                                                     }
                                                                     stroke='currentColor'
-                                                                    className='w-6 h-6 stroke-red-600 col-span-1'
+                                                                    className='w-6 h-6 stroke-yellow-600'
                                                                 >
                                                                     <path
                                                                         strokeLinecap='round'
                                                                         strokeLinejoin='round'
-                                                                        d='M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+                                                                        d='M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z'
                                                                     />
                                                                 </svg>
 
