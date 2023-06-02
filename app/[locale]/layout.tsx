@@ -16,8 +16,9 @@ export const bitter = Bitter({ subsets: ['latin', 'cyrillic'] })
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Данила Фролов — Фронтенд девелопер',
-    description: '',
+    title: 'Данила Фролов — фронтенд разработчик',
+    description:
+        'Я помогаю воплощать ваши идеи в красивые, функциональные и производительные сайты. Сделаю для вас лендинг, многостраничный функциональный сайт или веб приложение. Напишите мне и мы обсудим все детали.',
     generator: 'Next.js',
     applicationName: 'Next.js',
     keywords: [
