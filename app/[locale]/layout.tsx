@@ -87,13 +87,13 @@ export default function RootLayout({
                             </LocaleSwitcherSelect>
                         </div>
 
-                        <SideBar
+                        {/* <SideBar
                             locale={locale}
                             headerLink_1={translate('header_link1')}
                             headerLink_2={translate('header_link2')}
                             headerLink_3={translate('header_link3')}
                             headerLink_4={translate('header_link4')}
-                        />
+                        /> */}
                     </aside>
                 </div>
                 {children}
