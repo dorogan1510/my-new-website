@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 import FramerWrapper from '../components/FramerWrapper'
 import { bitter } from '../layout'
 import PriceCurrencySwitcher from './components/PriceCurrencySwitcher'
@@ -208,14 +209,19 @@ const Price = () => {
                                             />
                                         </div>
 
-                                        <button
-                                            className=' border-2  transition-all ease-in  hover:border-zinc-400 border-zinc-600  group flex h-min items-center justify-center p-0.5 text-center font-medium focus:z-10 rounded-full'
-                                            type='button'
+                                        <Link
+                                            href={'https://t.me/danfrolov94'}
+                                            target='_blank'
                                         >
-                                            <span className='flex items-center transition-all rounded-full text-base px-6 py-3 border border-transparent'>
-                                                {t('button')}
-                                            </span>
-                                        </button>
+                                            <button
+                                                className=' border-2  transition-all ease-in  hover:border-zinc-400 border-zinc-600  group flex h-min items-center justify-center p-0.5 text-center font-medium focus:z-10 rounded-full'
+                                                type='button'
+                                            >
+                                                <span className='flex items-center transition-all rounded-full text-base px-6 py-3 border border-transparent'>
+                                                    {t('button')}
+                                                </span>
+                                            </button>
+                                        </Link>
                                         <div className='text-center text-sm text-zinc-400'>
                                             {data.workTime}
                                         </div>
