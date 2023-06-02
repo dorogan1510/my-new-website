@@ -9,8 +9,7 @@ import { bitter } from './layout'
 
 export const metadata: Metadata = {
     title: 'Данила Фролов — фронтенд разработчик',
-    description:
-        'Я помогаю воплощать ваши идеи в красивые, функциональные и производительные сайты. Сделаю для вас лендинг, многостраничный функциональный сайт или веб приложение. Напишите мне и мы обсудим все детали.',
+    description: 'Воплощаю ваши идеи в красивые и функциональные сайты',
     generator: 'Next.js',
     applicationName: 'Next.js',
     keywords: [
@@ -49,6 +48,32 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: 'Danila Frolov', url: 'https://danfrolov.ru' }],
     creator: 'Danila Frolov',
+    openGraph: {
+        title: 'Данила Фролов',
+        description: 'Воплощаю ваши идеи в красивые и функциональные сайты',
+        url: 'https://danfrolov.ru',
+        siteName: 'Данила Фролов',
+        images: [
+            {
+                url: 'public/img/me_metadata.webp',
+                width: 1000,
+                height: 1000,
+            },
+        ],
+        locale: 'ru-RU',
+        type: 'website',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
 }
 
 export default function Home() {
