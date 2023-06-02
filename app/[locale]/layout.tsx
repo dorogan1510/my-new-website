@@ -6,11 +6,67 @@ import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import LocaleSwitcherSelect from './components/LocaleSwitcherSelect'
 import { Dropdown } from 'flowbite-react'
+import FramerWrapper from './components/FramerWrapper'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 export const oswald = Oswald({ subsets: ['latin', 'cyrillic'] })
 export const bitter = Bitter({ subsets: ['latin', 'cyrillic'] })
+
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Данила Фролов — Фронтенд девелопер',
+    description: '',
+    generator: 'Next.js',
+    applicationName: 'Next.js',
+    keywords: [
+        'Данила Фролов',
+        'Фронтенд',
+        'Фронтенд девелопер',
+        'Лендинг',
+        'Заказать лендинг',
+        'Лэндинг',
+        'Заказать сайт',
+        'Сайт визитка',
+        'Создание лендинг пейдж',
+        'Разработка сайта',
+        'Сайт на заказ',
+        'Сайт под ключ',
+        'Создание сайта',
+        'купить сайт',
+        'одностраничный сайт',
+        'продающая страница',
+        'danfrolov',
+        'Danila Frolov',
+        'Frontend',
+        'Front-end developer',
+        'Landing',
+        'Order landing',
+        'To order a site',
+        'Business card website',
+        'Creating a landing page',
+        'website development',
+        'Website to order',
+        'Turnkey website',
+        'Website Creation',
+        'buy website',
+        'single page website',
+        'selling page',
+    ],
+    authors: [
+        { name: 'Seb' },
+        { name: 'Danila Frolov', url: 'https://danfrolov.ru' },
+    ],
+    colorScheme: 'dark',
+    creator: 'Jiachi Liu',
+    publisher: 'Sebastian Markbåge',
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false,
+    },
+}
 
 export default function RootLayout({
     children,
