@@ -75,10 +75,10 @@ const ProjectExamplesLanding = ({
                                                 ? 'bg-neutral-800 text-white'
                                                 : 'text-zinc-400'
                                         } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                                        href={'https://pollyglotiki.com/'}
+                                        href={'https://www.dfk-bezenchuk.ru/'}
                                         target='_blank'
                                     >
-                                        {examples_landing_3}
+                                        {examples_landing_2}
                                     </Link>
                                 )}
                             </Menu.Item>
