@@ -113,9 +113,13 @@
         "myProjects": "My projects",
         "createdWith": "Created with:",
         "lookInto": "Look into",
+        "Lidiya": {
+            "h2text": "Personal Website",
+            "p2text": "Landing for psychologist"
+        },
         "Rental": {
-            "h2text": " Website for daily rent of apartments in St. Petersburg",
-            "p2text": " Multi-page website for real estate rental in St. Petersburg"
+            "h2text": "Website for daily rent of apartments in St. Petersburg",
+            "p2text": "Multi-page website for real estate rental in St. Petersburg"
         },
         "LanguageTutor": {
             "h2text": "Website for the teacher of foreign languages",

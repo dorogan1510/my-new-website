@@ -11,6 +11,7 @@ import polina_site_screen from '../../../public/img/projects/polina_site_screen.
 import rental_screen from '../../../public/img/projects/rental_screen.webp'
 import todo_screen from '../../../public/img/projects/todo_screen.webp'
 import weather_screen from '../../../public/img/projects/weather_screen.webp'
+import lidiya_screen from '../../../public/img/projects/lidiya_screen.webp'
 import FramerWrapper from '../components/FramerWrapper'
 import { bitter } from '../layout'
 
@@ -66,6 +67,14 @@ const Projects = () => {
         },
     ]
     const ALL_PROJECTS_TEXT2 = [
+        {
+            id: '11',
+            h2text: t('Lidiya.h2text'),
+            p2text: t('Lidiya.p2text'),
+            litext: ['Next.js 13', 'Typescript', 'MaterialUI', 'Sass'],
+            href: 'https://www.lidiaserdiuk.com/',
+            img: lidiya_screen,
+        },
         {
             id: '10',
             h2text: t('Rental.h2text'),
@@ -133,7 +142,7 @@ const Projects = () => {
                                     <article className=' w-full p-4 md:p-8'>
                                         <h2
                                             id='featured-post'
-                                            className='mb-4 text-xl font-bold text-zinc-100  sm:text-2xl font-display'
+                                            className='mb-2 text-xl font-bold text-zinc-100  sm:text-2xl font-display'
                                         >
                                             {data.h2text}
                                         </h2>
@@ -176,7 +185,7 @@ const Projects = () => {
                                     <article className=' w-full p-4 md:p-8'>
                                         <h2
                                             id='featured-post'
-                                            className='mb-4 text-xl font-bold text-zinc-100  sm:text-2xl font-display'
+                                            className='mb-2 text-xl font-bold text-zinc-100  sm:text-2xl font-display'
                                         >
                                             {data.h2text}
                                         </h2>
