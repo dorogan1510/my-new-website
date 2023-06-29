@@ -55,6 +55,22 @@ const Technologies = () => {
                                 </li>
                                 <li>
                                     <h3 className='text-base  tracking-tight  text-zinc-100'>
+                                        {t('backend_about')}
+                                    </h3>
+                                    <p className='relative z-10 mt-2 text-sm  text-zinc-400'>
+                                        {t('backendDescription_about')}
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3 className='text-base  tracking-tight  text-zinc-100'>
+                                        {t('database_about')}
+                                    </h3>
+                                    <p className='relative z-10 mt-2 text-sm  text-zinc-400'>
+                                        {t('databaseDescription_about')}
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3 className='text-base  tracking-tight  text-zinc-100'>
                                         {t('cssFrameworks_about')}
                                     </h3>
                                     <p className='relative z-10 mt-2 text-sm  text-zinc-400'>
