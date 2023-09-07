@@ -12,6 +12,7 @@ import polina_site_screen from '@/public/img/projects/polina_site_screen.webp'
 import rental_screen from '@/public/img/projects/rental_screen.webp'
 import todo_screen from '@/public/img/projects/todo_screen.webp'
 import weather_screen from '@/public/img/projects/weather_screen.webp'
+import anna_website_screen from '@/public/img/projects/anna-website.webp'
 
 const AllProjects = () => {
     const t = useTranslations('Projects')
@@ -65,6 +66,14 @@ const AllProjects = () => {
         },
     ]
     const ALL_PROJECTS_TEXT2 = [
+        {
+            id: '12',
+            h2text: t('AnnaWebsite.h2text'),
+            p2text: t('AnnaWebsite.p2text'),
+            litext: ['Next.js 13', 'Typescript', 'Tailwind', 'Sass'],
+            href: 'https://www.boomerangschool.com/',
+            img: anna_website_screen,
+        },
         {
             id: '11',
             h2text: t('Lidiya.h2text'),

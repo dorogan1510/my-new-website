@@ -117,6 +117,10 @@
         "myProjects": "My projects",
         "createdWith": "Created with:",
         "lookInto": "Look into",
+        "AnnaWebsite": {
+            "h2text": "English and German languages school website",
+            "p2text": "English and German languages school landing page where you can choose your teacher and start learning foreign languages"
+        },
         "Lidiya": {
             "h2text": "Personal Website",
             "p2text": "Landing for psychologist"
