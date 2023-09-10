@@ -6,7 +6,7 @@
         "header_link4": "Prices",
         "created": "Created with:",
         "h1_main": "Danila Frolov",
-        "p_main": "Hello there! I'm Danila and I'm thrilled to have you here and showcase my passion for frontend development. Whether you're an individual, a startup, or an established company, I'm here to help you transform your ideas into beautiful, functional websites.  ",
+        "p_main": "Hello there! I'm Danila and I'm thrilled to have you here and showcase my passion for frontend development",
         "p_description": "If you're ready to take your online presence to the next level, I'd love to work with you. Let's do it together and create a visually stunning and highly functional website that captivates your audience. Feel free to reach out to me to discuss your project or for any inquiries."
     },
     "About": {
@@ -83,7 +83,7 @@
         "Multipage": {
             "h1_multipage": " Multi-page site",
             "price_usd_multipage": "$300",
-            "price_rub_multipage": "₽20000",
+            "price_rub_multipage": "₽25000",
             "description_multipage": " Among the standard pages on sites of this type, sections can be distinguished: \"Home\", \"About the company\", \"Our services / products\", etc.",
             "workTime_multipage": "Work time: from 7 days",
             "whatsInclude_multipage": "Included in the price",

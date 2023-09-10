@@ -79,27 +79,6 @@ const PriceCard = () => {
                 />
             ),
         },
-        // {
-        //     id: 3,
-        //     h1_text: t('BusinessCard.h1_businessCard'),
-        //     p_text: t('BusinessCard.description_businessCard'),
-        //     include: [
-        //         t('BusinessCard.whatsInclude1_businessCard'),
-        //         t('BusinessCard.whatsInclude2_businessCard'),
-        //         t('BusinessCard.whatsInclude3_businessCard'),
-        //         t('BusinessCard.whatsInclude4_businessCard'),
-        //     ],
-        //     not_include: [
-        //         t('BusinessCard.whatsNotInclude1_businessCard'),
-        //         t('BusinessCard.whatsNotInclude2_businessCard'),
-        //         t('BusinessCard.whatsNotInclude3_businessCard'),
-        //     ],
-        //     whats_include: t('BusinessCard.whatsInclude_businessCard'),
-        //     whats_not_include: t('BusinessCard.whatsNotInclude_businessCard'),
-        //     price_rub: t('BusinessCard.price_rub_businessCard'),
-        //     price_usd: t('BusinessCard.price_usd_businessCard'),
-        //     workTime: t('BusinessCard.workTime_businessCard'),
-        // },
     ]
 
     return (
