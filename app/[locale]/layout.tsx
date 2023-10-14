@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 import { useLocale, useTranslations } from 'next-intl'
 import { Bitter, Inter } from 'next/font/google'
@@ -53,6 +54,7 @@ export default function RootLayout({
                     </aside>
                 </div>
                 {children}
+                <Analytics />
             </body>
         </html>
     )
